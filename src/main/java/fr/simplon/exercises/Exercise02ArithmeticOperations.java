@@ -6,58 +6,64 @@ package fr.simplon.exercises;
  * Objectif: Apprendre à effectuer des calculs simples
  */
 public class Exercise02ArithmeticOperations {
-    
+
     /**
      * Additionne deux nombres
+     * 
      * @param a premier nombre
      * @param b second nombre
      * @return la somme de a et b
      */
     public int add(int a, int b) {
-        throw new UnsupportedOperationException();
+        int somme = a + b;
+        return somme;
     }
-    
+
     /**
      * Soustrait deux nombres
+     * 
      * @param a premier nombre
      * @param b second nombre
      * @return la différence entre a et b
      */
     public int subtract(int a, int b) {
-        throw new UnsupportedOperationException();
-
+        int diff = a - b;
+        return diff;
     }
-    
+
     /**
      * Multiplie deux nombres
+     * 
      * @param a premier nombre
      * @param b second nombre
      * @return le produit de a et b
      */
     public int multiply(int a, int b) {
-        throw new UnsupportedOperationException();
-
+        int produit = a * b;
+        return produit;
     }
-    
+
     /**
      * Divise deux nombres (division entière)
+     * 
      * @param a dividende
      * @param b diviseur
      * @return le quotient de a divisé par b
      */
     public int divide(int a, int b) {
-        throw new UnsupportedOperationException();
-
+        int quotient = a / b;
+        return quotient;
     }
-    
+
     /**
      * Calcule le reste de la division
+     * 
      * @param a dividende
      * @param b diviseur
      * @return le reste de a divisé par b
      */
     public int modulo(int a, int b) {
-        throw new UnsupportedOperationException();
-
+        int reste = a % b;
+        return reste;
     }
 }

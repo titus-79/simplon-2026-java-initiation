@@ -6,28 +6,34 @@ package fr.simplon.exercises;
  * Objectif: Apprendre à assigner des valeurs à des variables
  */
 public class Exercise01VariableAssignment {
-    
+
     /**
      * Assigne la valeur 42 à une variable et la retourne
+     * 
      * @return la valeur 42
      */
     public int assignInteger() {
-        throw new UnsupportedOperationException();
+        int i = 42;
+        return i;
     }
-    
+
     /**
      * Assigne ton prénom à une variable et la retourne
+     * 
      * @return ton prénom
      */
     public String assignString() {
-        throw new UnsupportedOperationException();
+        String s = "Rodolphe";
+        return s;
     }
-    
+
     /**
      * Assigne la valeur true à une variable et la retourne
+     * 
      * @return la valeur true
      */
     public boolean assignBoolean() {
-        throw new UnsupportedOperationException();
+        boolean b = true;
+        return b;
     }
 }
