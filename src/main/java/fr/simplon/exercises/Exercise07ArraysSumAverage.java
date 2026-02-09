@@ -13,8 +13,11 @@ public class Exercise07ArraysSumAverage {
      * @return la somme de tous les éléments
      */
     public int sum(int[] array) {
-        throw new UnsupportedOperationException();
-
+        int somme = 0;
+        for (int i = 0; i < array.length; i++){
+            somme += array[i];
+        }
+        return somme;
     }
     
     /**
@@ -23,8 +26,13 @@ public class Exercise07ArraysSumAverage {
      * @return la moyenne (arrondie à l'entier inférieur)
      */
     public double average(int[] array) {
-        throw new UnsupportedOperationException();
+        double result = 0;
+        for (int i = 0; i < array.length; i++){
+            result += array[i];
+        }
 
+        result = result / array.length;
+        return result;
     }
     
     /**
@@ -33,7 +41,21 @@ public class Exercise07ArraysSumAverage {
      * @return le nombre d'éléments supérieurs à la moyenne
      */
     public int countAboveAverage(int[] array) {
-        throw new UnsupportedOperationException();
+                double result = 0;
+        for (int i = 0; i < array.length; i++){
+            result += array[i];
+        }
+
+        result = result / array.length;
+
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > result) {
+                count++;
+            }
+        }
+        
+        return count;
 
     }
     
@@ -43,8 +65,13 @@ public class Exercise07ArraysSumAverage {
      * @return la somme des nombres pairs
      */
     public int sumEvenNumbers(int[] array) {
-        throw new UnsupportedOperationException();
-
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]%2 == 0) {
+                result = result + array[i];
+            }
+        }
+        return result;
     }
     
     /**
@@ -53,7 +80,10 @@ public class Exercise07ArraysSumAverage {
      * @return le produit de tous les éléments
      */
     public int product(int[] array) {
-        throw new UnsupportedOperationException();
-
+        int result = 1;
+        for (int i = 0; i < array.length; i++) {
+            result = result * array[i];
+        }
+        return result;
     }
 }
