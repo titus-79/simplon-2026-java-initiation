@@ -29,7 +29,7 @@ public class Exercise04Loops {
      */
     public int reverseNumber(int number) {
         int result = 0;
-        while (number != 0) {
+        while (number > 0) {
             result = result * 10;
             result = result + number % 10;
             number = number / 10;
@@ -45,7 +45,7 @@ public class Exercise04Loops {
      */
     public int factorial(int n) {
         int result = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
             result = result * i;
         }
         return result;
