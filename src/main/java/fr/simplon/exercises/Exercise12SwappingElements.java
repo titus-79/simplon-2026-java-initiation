@@ -15,9 +15,8 @@ public class Exercise12SwappingElements {
      * @param j     second index
      */
     public int[] swap(int[] array, int i, int j) {
-        int temp = 0;
 
-        temp = array[i];
+        int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
 
